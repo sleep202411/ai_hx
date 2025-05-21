@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电商APP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF3B30',
+                        secondary: '#FF8A80'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '2px',
+                        DEFAULT: '4px',
+                        'md': '8px',
+                        'lg': '12px',
+                        'xl': '16px',
+                        '2xl': '20px',
+                        '3xl': '24px',
+                        'full': '9999px',
+                        'button': '4px'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 w-[375px] min-h-[762px]">
+    <nav class="fixed top-0 w-full bg-primary text-white px-4 py-3 z-50 flex items-center justify-between">
+        <div class="font-['Pacifico'] text-xl">logo</div>
+        <div class="flex items-center space-x-3">
+            <i class="fas fa-search text-lg w-5 h-5 flex items-center justify-center"></i>
+            <i class="fas fa-bell text-lg w-5 h-5 flex items-center justify-center"></i>
+        </div>
+    </nav>
+
+    <main class="pt-[60px] pb-[70px]">
+        <div class="px-4">
+            <div class="relative w-full h-[160px] rounded-lg overflow-hidden mb-4">
+                <img src="https://ai-public.mastergo.com/ai/img_res/74032dbdf20a80f15408eeea5e6d6689.jpg" 
+                     class="w-full h-full object-cover" alt="banner">
+            </div>
+
+            <div class="grid grid-cols-5 gap-4 mb-6">
+                <div class="text-center">
+                    <div class="w-[48px] h-[48px] mx-auto mb-1 rounded-full overflow-hidden">
+                        <img src="https://ai-public.mastergo.com/ai/img_res/3f5c3f8f6869f0f00bf672bb325b9100.jpg" 
+                             class="w-full h-full object-cover" alt="数码">
+                    </div>
+                    <p class="text-xs text-gray-600 whitespace-nowrap overflow-hidden text-ellipsis">数码</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-[48px] h-[48px] mx-auto mb-1 rounded-full overflow-hidden">
+                        <img src="https://ai-public.mastergo.com/ai/img_res/5895adaa274afa1af19867857b57aedb.jpg" 
+                             class="w-full h-full object-cover" alt="服饰">
+                    </div>
+                    <p class="text-xs text-gray-600 whitespace-nowrap overflow-hidden text-ellipsis">服饰</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-[48px] h-[48px] mx-auto mb-1 rounded-full overflow-hidden">
+                        <img src="https://ai-public.mastergo.com/ai/img_res/159729547252caedc427a7a0c145783b.jpg" 
+                             class="w-full h-full object-cover" alt="美妆">
+                    </div>
+                    <p class="text-xs text-gray-600 whitespace-nowrap overflow-hidden text-ellipsis">美妆</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-[48px] h-[48px] mx-auto mb-1 rounded-full overflow-hidden">
+                        <img src="https://ai-public.mastergo.com/ai/img_res/b8cd8b238fd417a4d2e54972fe2092ac.jpg" 
+                             class="w-full h-full object-cover" alt="美食">
+                    </div>
+                    <p class="text-xs text-gray-600 whitespace-nowrap overflow-hidden text-ellipsis">美食</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-[48px] h-[48px] mx-auto mb-1 rounded-full overflow-hidden">
+                        <img src="https://ai-public.mastergo.com/ai/img_res/3cf79bb1475b28640f334724b7006c27.jpg" 
+                             class="w-full h-full object-cover" alt="礼品">
+                    </div>
+                    <p class="text-xs text-gray-600 whitespace-nowrap overflow-hidden text-ellipsis">礼品</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3">
+                <div class="bg-white rounded-lg p-3 shadow-sm">
+                    <img src="https://ai-public.mastergo.com/ai/img_res/5cf88dd32a7a502c45f36d670dd34173.jpg" 
+                         class="w-full h-[140px] object-cover rounded-lg mb-2" alt="商品图片">
+                    <h3 class="text-sm font-medium mb-1">iPhone 14 Pro Max</h3>
+                    <p class="text-xs text-gray-500 mb-2">256GB 暗紫色</p>
+                    <p class="text-primary text-sm font-medium">¥ 9,999</p>
+                </div>
+                <div class="bg-white rounded-lg p-3 shadow-sm">
+                    <img src="https://ai-public.mastergo.com/ai/img_res/f955f0b113c2cb36b0fbc6769402708a.jpg" 
+                         class="w-full h-[140px] object-cover rounded-lg mb-2" alt="商品图片">
+                    <h3 class="text-sm font-medium mb-1">AirPods Pro</h3>
+                    <p class="text-xs text-gray-500 mb-2">第二代 主动降噪</p>
+                    <p class="text-primary text-sm font-medium">¥ 1,899</p>
+                </div>
+                <div class="bg-white rounded-lg p-3 shadow-sm">
+                    <img src="https://ai-public.mastergo.com/ai/img_res/f78dc6a941b6d12d190e72e068c3b378.jpg" 
+                         class="w-full h-[140px] object-cover rounded-lg mb-2" alt="商品图片">
+                    <h3 class="text-sm font-medium mb-1">Apple Watch Series 8</h3>
+                    <p class="text-xs text-gray-500 mb-2">GPS 45mm</p>
+                    <p class="text-primary text-sm font-medium">¥ 3,999</p>
+                </div>
+                <div class="bg-white rounded-lg p-3 shadow-sm">
+                    <img src="https://ai-public.mastergo.com/ai/img_res/6b056c545f6b1ea648c80806b2a96234.jpg" 
+                         class="w-full h-[140px] object-cover rounded-lg mb-2" alt="商品图片">
+                    <h3 class="text-sm font-medium mb-1">iPad Air</h3>
+                    <p class="text-xs text-gray-500 mb-2">256GB WIFI版</p>
+                    <p class="text-primary text-sm font-medium">¥ 5,499</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <nav class="fixed bottom-0 w-full bg-white border-t border-gray-100 px-2 py-1">
+        <div class="grid grid-cols-5 gap-1">
+            <a href="#" class="flex flex-col items-center py-1 text-primary">
+                <i class="fas fa-home text-lg w-6 h-6 flex items-center justify-center"></i>
+                <span class="text-xs mt-1">首页</span>
+            </a>
+            <a href="#" class="flex flex-col items-center py-1 text-gray-400">
+                <i class="fas fa-play text-lg w-6 h-6 flex items-center justify-center"></i>
+                <span class="text-xs mt-1">视频</span>
+            </a>
+            <a href="#" class="flex flex-col items-center py-1 text-gray-400">
+                <i class="fas fa-comment text-lg w-6 h-6 flex items-center justify-center"></i>
+                <span class="text-xs mt-1">消息</span>
+            </a>
+            <a href="#" class="flex flex-col items-center py-1 text-gray-400">
+                <i class="fas fa-shopping-cart text-lg w-6 h-6 flex items-center justify-center"></i>
+                <span class="text-xs mt-1">购物车</span>
+            </a>
+            <a href="#" class="flex flex-col items-center py-1 text-gray-400">
+                <i class="fas fa-user text-lg w-6 h-6 flex items-center justify-center"></i>
+                <span class="text-xs mt-1">我的</span>
+            </a>
+        </div>
+    </nav>
+</body>
+</html>
