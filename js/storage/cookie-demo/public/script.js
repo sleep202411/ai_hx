@@ -23,3 +23,13 @@ loginForm.addEventListener('submit', async(e) => {
     
   }
 })
+document.addEventListener('DOMContentLoaded',async () => {
+  // 登陆吗？
+  try {
+    const response = await fetch('/check-login')
+    const data = await response.json();
+    console.log(data); 
+  } catch(err) {
+
+  }
+})

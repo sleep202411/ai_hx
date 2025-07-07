@@ -84,6 +84,7 @@ const server = http.createServer((req, res) => {
   if (req.method == 'POST' && req.url == '/login') {
     // 用户名和密码的校验
     res.writeHead(200,{
+      // 服务器端设置的
       'Set-Cookie': 'user=admin',
       'Content-Type': 'application/json'
     })
@@ -93,6 +94,30 @@ const server = http.createServer((req, res) => {
         msg: '登录成功',
       })
     );
+  }
+  if (req.method == 'GET' && req.url == '/check-login') {
+    // 检查是否登录
+    // 检查 cookie 里是否有 user
+    // 检查请求头里的 cookie
+    if(req.headers.cookie){
+      res.writeHead(200,{
+        'Content-Type': 'application/json'
+      })
+      res.end(JSON.stringify({
+        loggedIn: true,
+        username:'admin'
+      }))
+    }
+    else {
+      res.writeHead(200,{
+        'Content-Type': 'application/json'
+      })
+      res.end(JSON.stringify({
+        loggedIn: false,
+        username:''
+      }))
+    }
+    
   }
 })
 server.listen(8080);
