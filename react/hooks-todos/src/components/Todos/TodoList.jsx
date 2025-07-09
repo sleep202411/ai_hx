@@ -15,7 +15,7 @@ const TodoList = (props) => {
                      key={todo.id} 
                      todo={todo}
                      onToggle={()=>onToggle(todo.id)} 
-                     onDelete={()=>onDelete(todo.id)}
+                     onDelete={() =>onDelete(todo.id)}
                      />)
                 ) : (
                     <p>暂无待办事项</p>
