@@ -105,4 +105,6 @@
     - 全面hooks函数式编程
 
 - 两个遗憾
-    - ../../
+    - ../../ 路径山路18弯
+        vite 配置alias 短路径
+    - toggle、delete  跨越组件层级有点多，useContext
